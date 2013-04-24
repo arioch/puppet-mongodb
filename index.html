@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Puppet-mongodb by arioch</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Puppet-mongodb</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/arioch/puppet-mongodb">View the Project on GitHub <small>arioch/puppet-mongodb</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/arioch/puppet-mongodb/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/arioch/puppet-mongodb/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/arioch/puppet-mongodb">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Puppet MongoDB</h1>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>Puppetlabs <a href="https://github.com/puppetlabs/puppetlabs-apt">apt module</a> or</li>
+<li>Camptocamp <a href="https://github.com/camptocamp/puppet-apt">apt module</a>
+</li>
+</ul><h2>Example usage</h2>
+
+<h3>Install MongoDB</h3>
+
+<pre><code>node /box/ {
+  include mongodb
+}
+</code></pre>
+
+<h3>Manage repository</h3>
+
+<pre><code>node /box/ {
+  class { 'mongodb':
+    manage_repo =&gt; true,
+  }
+}
+</code></pre>
+
+<h3>Configure MongoDB</h3>
+
+<pre><code>node /box/ {
+  class { 'mongodb':
+    authentication =&gt; false,
+    listen_port    =&gt; '27017',
+    quota          =&gt; false,
+  }
+}
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/arioch">arioch</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
