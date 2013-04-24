@@ -16,8 +16,18 @@
 ### Manage repository
 
     node /box/ {
-      class {
-        'mongodb': manage_repo => true;
+      class { 'mongodb':
+        manage_repo => true,
+      }
+    }
+
+### Configure MongoDB
+
+    node /box/ {
+      class { 'mongodb':
+        authentication => false,
+        listen_port    => '27017',
+        quota          => false,
       }
     }
 
