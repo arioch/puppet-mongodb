@@ -1,4 +1,4 @@
-# = Class mongodb::params
+# == Class mongodb::params
 #
 class mongodb::params {
   $manage_repo = false

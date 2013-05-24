@@ -1,4 +1,4 @@
-# = Class mongodb::config
+# == Class mongodb::config
 #
 class mongodb::config {
   File {

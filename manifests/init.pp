@@ -1,4 +1,4 @@
-# = Class mongodb
+# == Class mongodb
 #
 class mongodb (
   $config_dir         = $::mongodb::params::config_dir,

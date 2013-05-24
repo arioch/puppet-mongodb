@@ -1,4 +1,4 @@
-# = Class mongodb::preinstall
+# == Class mongodb::preinstall
 #
 class mongodb::preinstall {
   if $::mongodb::manage_repo {
