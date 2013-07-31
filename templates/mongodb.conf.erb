@@ -5,14 +5,14 @@
 # Note: if you run mongodb as a non-root user (recommended) you may
 # need to create and set permissions for this directory manually,
 # e.g., if the parent directory isn't mutable by the mongodb user.
-dbpath=<%= db_path %>
+dbpath=<%= @db_path %>
 
 #where to log
-logpath=<%= log_dir %>/mongodb.log
+logpath=<%= @log_dir %>/mongodb.log
 
 logappend=<% if @log_append %>true<% else %>false<% end %>
 
-port = <%= listen_port %>
+port = <%= @listen_port %>
 
 # Disables write-ahead journaling
 nojournal = <% if @no_journal %>true<% else %>false<% end %>
